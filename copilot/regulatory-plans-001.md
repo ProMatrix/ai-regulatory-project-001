@@ -1,5 +1,9 @@
 # Regulatory Plans 001
 
+## Overview
+
+This document serves as a roadmap to create a Microsoft Foundry agent, that can answer questions about regulatory documents.
+
 ## Objective
 
 Create a completely fresh Microsoft Foundry implementation in this Visual Studio Code workspace that can answer questions about two PDF documents using a knowledge-base-first design backed by Azure AI Search.
