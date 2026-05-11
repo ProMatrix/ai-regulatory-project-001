@@ -1,0 +1,35 @@
+{
+  "name": "ai-regulatory-project-001",
+  "version": "1.0.0",
+  "description": "Microsoft Foundry regulatory document agent workspace.",
+  "private": true,
+  "type": "module",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "check:env": "tsx scripts/check-env.ts",
+    "search:create-index": "tsx scripts/create-search-index.ts",
+    "search:index-pdfs": "tsx scripts/index-pdfs.ts",
+    "search:create-kb": "tsx scripts/create-knowledge-assets.ts",
+    "foundry:create-agent": "tsx scripts/create-foundry-agent.ts",
+    "validate:local": "vitest run --passWithNoTests",
+    "validate:live": "tsx scripts/validate-live.ts",
+    "test": "vitest run --passWithNoTests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.16.0",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}
